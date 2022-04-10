@@ -19,7 +19,7 @@ class spiralMatrix:
         matrix[i][j] = '#'
         
         
-        if j>=i or i == j+1:
+        if j+1>=i:
             self.helper(matrix,i,j+1,res)
         self.helper(matrix,i+1,j,res)
         self.helper(matrix,i,j-1,res)
